@@ -25,6 +25,14 @@ public class TestUtils {
         assertTrue(actualMessage.contains(expectedMessage));
     }
     @Test
+    public void shouldReturnCountOfWordsInSentence() {
+        String sentence = "this is ilon mask, really it is him";
+        String word = "is";
+        int result = StringUtils.countWordsInSentence(sentence, word);
+        assertEquals(result, 2);
+    }
+
+    @Test
     public void shouldReturnSumOfElements() {
         var list = List.of(1,2,3);
         int result = NumberUtils.getSum(list);

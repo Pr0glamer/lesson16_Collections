@@ -16,10 +16,24 @@ public class StringUtils {
         }
         return minLengthWord;
     }
+    public static int countWordsInSentence(String sentence, String word) {
+        String[] words = sentence.split(" ");
+        int counter = 0;
+        for(String sentenceWord : words) {
+            if(word.equals(sentenceWord)) {
+                counter++;
+            }
+        }
+        return counter;
+    }
 
     public static void main(String[] args) {
         var list = List.of("p", "pp", "222");
         System.out.println(StringUtils.getShortestWord(list));
+
+        int result = StringUtils.countWordsInSentence("this is ilon mask, really it is him", "is");
+        System.out.println(result);
+
     }
 
 
