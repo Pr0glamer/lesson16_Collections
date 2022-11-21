@@ -33,6 +33,14 @@ public class TestUtils {
     }
 
     @Test
+    public void shouldReturnMapThatStoreCountOfWordsInSentence() {
+        String sentence = "this is ilon mask, really it is him";
+        String word = "is";
+        var result = StringUtils.countWordsInSentence(sentence);
+        assertEquals(result.get("is"), 2);
+    }
+
+    @Test
     public void shouldReturnSumOfElements() {
         var list = List.of(1,2,3);
         int result = NumberUtils.getSum(list);

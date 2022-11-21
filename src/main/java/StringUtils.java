@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class StringUtils {
     public static String getShortestWord(List<String> words) {
@@ -27,11 +29,26 @@ public class StringUtils {
         return counter;
     }
 
+    public static Map<String, Integer> countWordsInSentence(String sentence) {
+
+         String [] wordsInSentence = sentence.split("\\W+");
+         Map<String, Integer> result = new HashMap<>();
+         for(String sentenceWord : wordsInSentence) {
+            Integer value = result.get(sentenceWord);
+            if(value == null) {
+                result.put(sentenceWord, 1);
+            } else {
+                result.put(sentenceWord, ++value);
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         var list = List.of("p", "pp", "222");
         System.out.println(StringUtils.getShortestWord(list));
 
-        int result = StringUtils.countWordsInSentence("this is ilon mask, really it is him", "is");
+        var result = StringUtils.countWordsInSentence("this is ilon mask, really it is him");
         System.out.println(result);
 
     }

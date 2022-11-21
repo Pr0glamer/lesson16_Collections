@@ -42,7 +42,7 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestUtils.shouldReturnCountOfWordsInSentence">
+  <component name="RunManager" selected="JUnit.TestUtils.shouldReturnMapThatStoreCountOfWordsInSentence">
     <configuration name="StringUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StringUtils" />
       <module name="nix" />
@@ -69,6 +69,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestUtils.shouldReturnMapThatStoreCountOfWordsInSentence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nix" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestUtils" />
+      <option name="METHOD_NAME" value="shouldReturnMapThatStoreCountOfWordsInSentence" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestUtils.shouldReturnNewListOfMultipliedOddNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nix" />
       <option name="PACKAGE_NAME" value="" />
@@ -79,23 +89,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUtils.shouldReturnShortestWordFromListOfWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nix" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestUtils" />
-      <option name="METHOD_NAME" value="shouldReturnShortestWordFromListOfWords" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestUtils.shouldReturnCountOfWordsInSentence" />
+        <item itemvalue="JUnit.TestUtils.shouldReturnMapThatStoreCountOfWordsInSentence" />
         <item itemvalue="Application.StringUtils" />
+        <item itemvalue="JUnit.TestUtils.shouldReturnCountOfWordsInSentence" />
         <item itemvalue="JUnit.TestUtils" />
         <item itemvalue="JUnit.TestUtils.shouldReturnNewListOfMultipliedOddNumber" />
-        <item itemvalue="JUnit.TestUtils.shouldReturnShortestWordFromListOfWords" />
       </list>
     </recent_temporary>
   </component>
@@ -107,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668887856977</updated>
-      <workItem from="1668887859484" duration="3187000" />
+      <workItem from="1668887859484" duration="4720000" />
     </task>
     <servers />
   </component>
